@@ -1,34 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.css';
+import Routes from './route';
+
+
+//Estado é toda aquela variavel que muda de estado. 
+//Pode-se utilizar o "useState" (import { useState } from 'react');
+//Cada variavel que muda de estado precisa (necessáriamente) de uma variavel para MUDAR o estado da inicial
 
 function App() {
-    return ( <
-        div className = "App" >
-
-        <
-        header className = "App-header" >
-
-        <
-        img src = { logo }
-        className = "App-logo"
-        alt = "logo" / >
-
-        <
-        p >
-        O logo do React girando boy
-
-
-        <
-        /p>  <
-        a className = "App-link"
-        href = "https://reactjs.org"
-        target = "_blank"
-        rel = "noopener noreferrer" >
-        Learn React <
-        /a>  < /
-        header > <
-        /div>
+    return ( 
+        <Routes />
     );
 }
 
